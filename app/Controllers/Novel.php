@@ -18,7 +18,6 @@ class Novel extends BaseController
     {
         //step 4 memanggil 
         $this -> Novel = new NovelModel();
-        $this -> genre = new GenreModel();
     }
 
     public function index()
@@ -39,6 +38,22 @@ class Novel extends BaseController
         $data["genre"] = $this->genre->getAllData();
         $data["novel"] = $this->Novel->getDataByID($id);
         return view("novel/detail", $data); 
+    }
+
+    public function sinopsis($id)
+    {
+        $data["genre"] = $this->genre->getAllData();
+        $data["novel"] = $this->Novel->getDataByID($id);
+        return view("novel/sinopsis", $data); 
+    }
+
+    public function hapus($id)
+    {
+        $decryptedId = decryptUrl($id);
+        $this->Novel->delete($decryptedId);
+        session()->setFlashdata('success', 'Data berhasil dihapus.');
+
+        return redirect()->to('/novel');
     }
 
     public function contact(){
