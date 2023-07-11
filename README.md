@@ -1,44 +1,61 @@
-# CodeIgniter 4 Framework
+# Pengelolaan Daftar Novel
 
-## What is CodeIgniter?
+## Tujuan Pembuatan Aplikasi
+  pembuatan aplikasi ini bertujuan untuk menyelesaikan tugas ujian  akhir praktikum yang berfungsikan untuk mengimplementasikan pengetahuan dan keterampilan yang telah dipelajari selama praktik menjadi sebuah aplikasi yang berfungsi.  tujuan utama pembuatan aplikasi adalah sebagai berikut:
+  1. Penerapan konsep dan teknik pemrograman web CI4 dan MVC yang relavan dan terstruktur
+  2. Meningkatkan kreativitas dan keahlian dalam pengembangan aplikasi
+  3. ujian akhir praktik ini memberikan kesempatan bagi peserta untuk mengaplikasikan pengetahuan dan keterampilan yang telah dipelajari dalam suatu proyek nyata
+  4. Aplikasi ini dirancang untuk mengevaluasi kemampuan dalam mengembangkan, mengimplementasikan, dan mendemonstrasikan pemahaman praktis terhadap materi yang telah dipelajari.
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+## Peralatan Yang Digunakan
+  Alat dan bahan yang digunakan:  
+1.	Pc/Laptop  
+2.	Aplikasi Visual Studio Code Versi 1.7.8.2.0
+3.	Microsoft Word Versi 2011
+4.	BPP
+5.	Xampp Versi 7.4.29
+6.	Git Bash Versi 2.40.0.1
+7.	Command Prompt Versi 10.0.2
+8.	Composer Versi 2.5.7
+9.	Codeigeneter Versi 4.3.5
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+## Latar Belakang Aplikasi 
+aplikasi web daftar novel adalah aplikasi web menyediakan platform yang memungkinkan pengguna untuk mencari, menemukan, dan melihat informasi tentang berbagai novel. Aplikasi ini ditujukan untuk para pecinta buku dan pembaca yang ingin menjelajahi dunia novel dengan lebih mudah dan efisien.aplikasi web daftar novel dapat menjadi solusi yang bermanfaat bagi pembaca novel yaitu untuk Memberikan informasi detail tentang novel,Membantu dalam mengatur dan melacak novel yang ingin di cari,mencari rekomendasi novel yang terbaru,Meningkatkan pengalaman membaca secara digital , dan  memberikan alternatif untuk membaca sinopsisnya.
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+Aplikasi web daftar novel dapat menjadi sarana yang efektif untuk menghubungkan pembaca dengan berbagai novel, membantu mereka dalam memilih dan mengatur koleksi novel, serta memfasilitasi interaksi antara pengguna dengan rekomendasi dan ulasan mereka.
 
-The user guide corresponding to the latest version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+## Landasan Teori
+A.	Pengertian Composser
 
-## Important Change with index.php
+Composer adalah alat dependency manager untuk bahasa pemrograman PHP. Dengan kata lain, Composer adalah aplikasi yang diinstal ke perangkat untuk memfasilitasi developer menggunakan library open source milik orang lain ke dalam project yang sedang dibangun. Composer membantu mengatur ketergantungan (dependency) atau penggunaan library luar project PHP. Proses penulisan kode akan lebih cepat dan terstruktur, sebab kemampuannya dalam mengelola instalasi dan mengupdate library yang digunakan.
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+B.	Pengertian Codeigneter
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+Codeigniter adalah salah satu framework untuk membuat website dengan bahasa pemrograman PHP. Codeigniter terkenal dengan konsep MVC-nya. MVC merupakan singkatan dari Model–View–Controller.
 
-**Please** read the user guide for a better explanation of how CI4 works!
+C.	Fitur-fitur codeigneter
 
-## Repository Management
+Ada beberapa fitur codeigneter yaitu:
+1. XSS filtering
+2. Template engine class
+3. MVC
+4. Extremely Light Weight
+5. Built in library
+6. Keunggulan Codeigneter
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
-
-## Contributing
-
-We welcome contributions from the community.
-
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
+   Ada beberapa kelebihan CodeIgniter (CI) dibandingkan dengan Framework PHP lain yaitu:
+   a. Performa cepat: Codeigniter merupakan framework yang paling cepat dibanding framework yang lain. Karena tidak menggunakan template engine dan ORM yang dapat memperlambat proses.
+   b. Konfigurasi yang minim (nearly zero configuration): tentu saja untuk menyesuaikan dengan database dan keleluasaan routing tetap diizinkan melakukan konfigurasi dengan mengubah beberapa file konfigurasi seperti database.php atau autoload.php, namun untuk menggunakan codeigniter dengan setting standard, anda hanya perlu mengubah sedikit saja pada file di folder config.
+   c. Memiliki banyak komunitas: Komunitas CI di indonesia cukup ramai, tutorialnya pun mudah dicari.
+   d. Dokumentasi yang lengkap: Codeigniter disertai dengan user_guide yang berisi dokumentasi yang lengkap.
+   e. Mudah dipelajari pemula: Bagi pemula, CI sangat mudah dipelajari. Karena CI tidak terlalu bergantung pada tool tambahan seperti composer, ORM, Template Engine, dll.
+   
+E. Cara kerja Codeigneter
+1. Pengguna membuat perintah atau permintaan data ‘X’;
+2. Kemudian Controller akan menerima permintaan serta meminta Model mencari data ‘X’ tersebut;
+3. Model mulai melakukan pencarian data ‘X’ di database;
+4. Bila data ‘X’ sudah ditemukan, selanjutnya View akan mengkonversinya menjadi data yang dapat dibaca oleh pengguna serta kembali dikirim ke browser;
+5. Data ‘X’ pun berhasil diterima pengguna.
 
 ## Server Requirements
 
