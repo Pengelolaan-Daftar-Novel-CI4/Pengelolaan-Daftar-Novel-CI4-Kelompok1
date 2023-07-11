@@ -1,21 +1,18 @@
 <?php $this ->extend("layout/layout");
-$this->section("content");
-
-
-?>
+$this->section("content");?>
 
 <div class="row">
     <div class="col-md-12">
         <div class="card">
             <div class="card-header">
                 <div class="row">
-                    <div class="text-center">
-                        <h2>Tambahkan Kategori Novel</h2>
-                            <p>
-                                Kategori Novel Yang sedang Viral 
-                            </p>
+                    <div class="col-md-6">
+                        <h3> Halaman Tambah Data Genre</h3>
+                    </div>
+                    <div class="col-md-6 text-end"> 
                     </div>
                 </div>
+            </div>
             </div>
             <div class="card-body">
             <form action="/genre/baru" method="POST" enctype="multipart/form-data">
@@ -32,7 +29,7 @@ $this->section("content");
 
                         <div class="col-md-6">
                             <a href="/genre" class="btn btn-dark mt-2" >kembali</a>
-                            <button type="submit" class="btn btn-primary mt-2">Simpan</button>
+                            <button type="submit" class="btn  btn-outline-primary mt-5">Simpan</button>
                         </div>
                     </div>
                 </form>
