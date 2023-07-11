@@ -65,7 +65,7 @@
             .then((willDelete) => {
                 if (willDelete) {
 
-                    window.location.href = "/novel/hapus/<?= encryptUrl($novel['id']) ?>";
+                    window.location.href = "/novel/hapus/<?= $novel['id'] ?>";
 
                 } else {
                     swal("Data tidak jadi dihapus!");

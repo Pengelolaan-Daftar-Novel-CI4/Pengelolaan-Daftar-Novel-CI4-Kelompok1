@@ -91,7 +91,7 @@ class Genre extends BaseController
 
     public function hapus($id_genre)
 {
-    $decryptedId = decryptUrl($id_genre);
+    $decryptedId = $id_genre;
     $this->Genre->delete($decryptedId);
     session()->setFlashdata('success', 'Data berhasil dihapus.');
 
