@@ -41,6 +41,22 @@ class Novel extends BaseController
         return view("novel/detail", $data); 
     }
 
+    public function sinopsis($id)
+    {
+        $data["genre"] = $this->genre->getAllData();
+        $data["novel"] = $this->Novel->getDataByID($id);
+        return view("novel/sinopsis", $data); 
+    }
+
+    public function hapus($id)
+    {
+        $decryptedId = decryptUrl($id);
+        $this->Novel->delete($decryptedId);
+        session()->setFlashdata('success', 'Data berhasil dihapus.');
+
+        return redirect()->to('/novel');
+    }
+
     public function contact(){
         $data['contact'] = $this -> Novel -> getAllDataJoin();
         return view("novel/contact", $data);
@@ -55,6 +71,71 @@ class Novel extends BaseController
         $data['genre'] = $this -> genre -> getAllData();
         $data["errors"] = session('errors');
         return view("novel/add", $data);
+    }
+
+    public function tambah(){
+        $validation =$this->validate([
+            'judul' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'kolom judul Harus Diisi'
+                ]
+            ],
+
+            'slug' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'kolom slug Harus Diisi'
+                ]
+            ],
+
+
+            'id_genre' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'kolom Genre Harus Diisi'
+                ]
+            ],
+
+            'karya' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'kolom karya Harus Diisi'
+                ]
+            ],
+
+            'penerbit' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'kolom penerbit Harus Diisi'
+                ]
+            ],
+
+        ]);
+        if (!$validation) {
+            $errors = \Config\Services::validation()->getErrors();
+            return redirect()->back()->withInput()->with('errors', $errors);
+        }
+
+        $image = $this->request->getFile('sampul');
+
+        //generate nama file yang unik
+        $imageName = $image->getRandomName();
+        //pindahkan file ke direktori penyimpanan
+        $image->move(ROOTPATH . 'public/assets/sampul/', $imageName);
+
+        $data = [
+            'judul'=> $this->request->getPost('judul'),
+            'slug'=> $this->request->getPost('slug'),
+            'id_genre'=> $this->request->getPost('id_genre'),
+            'karya'=> $this->request->getPost('karya'),
+            'penerbit'=> $this->request->getPost('penerbit'),
+            'sampul'=> $imageName,
+            'sinopsis' => $this->request->getPost('sinopsis'),
+        ];
+        $this->Novel->save($data);
+        session()->setFlashdata('success', 'Data berhasil disimpan.');
+        return redirect()->to('/novel');
     }
 
     public function update($id)
@@ -129,6 +210,7 @@ class Novel extends BaseController
             'id_genre' => $this->request->getPost('id_genre'),
             'karya' => $this->request->getPost('karya'),
             'penerbit' => $this->request->getPost('penerbit'),
+            'sinopsis' => $this->request->getPost('sinopsis'),
         ];
 
         //cek apakah ada sampul yg di upload
