@@ -146,9 +146,94 @@ Kekurangan Bootstrap adalah gaya visualnya yang hampir selalu sama, sehingga And
 
 ## Tampilan Aplikasi
 1. Tampilan Login
+   
    ![image](https://github.com/Pengelolaan-Daftar-Novel-CI4/Pengelolaan-Daftar-Novel-CI4-Kelompok1/assets/113124849/d3274464-7710-42a8-b794-6518add943db)
 
-2. Tampilan Home
+2.  Tampilan Home
+
+   ![image](https://github.com/Pengelolaan-Daftar-Novel-CI4/Pengelolaan-Daftar-Novel-CI4-Kelompok1/assets/113124849/4fc20dd3-70a4-40de-8288-fbc4314b87ef)
+
+3. Tampilan pada menu synopsis
+
+   ![image](https://github.com/Pengelolaan-Daftar-Novel-CI4/Pengelolaan-Daftar-Novel-CI4-Kelompok1/assets/113124849/bdfb68da-2806-460c-bcca-a80bcdfc64a1)
+
+4. Tampilan pada menu detail
+
+   ![image](https://github.com/Pengelolaan-Daftar-Novel-CI4/Pengelolaan-Daftar-Novel-CI4-Kelompok1/assets/113124849/4fae485b-01e5-42d9-a5e7-c7c19dc6d583)
+
+   ![image](https://github.com/Pengelolaan-Daftar-Novel-CI4/Pengelolaan-Daftar-Novel-CI4-Kelompok1/assets/113124849/a2595fae-c441-4d14-9fc1-5eee99b04b90)
+
+   
+6. Tampilan pada menu Update
+
+   ![image](https://github.com/Pengelolaan-Daftar-Novel-CI4/Pengelolaan-Daftar-Novel-CI4-Kelompok1/assets/113124849/c1be722a-1cae-407c-bae3-7e03a72f5190)
+
+7. Tampilan Delete Data
+
+   ![image](https://github.com/Pengelolaan-Daftar-Novel-CI4/Pengelolaan-Daftar-Novel-CI4-Kelompok1/assets/113124849/c78707b6-9982-4a6c-9121-9391f0c069c7)
+
+8. Tampilan pada menu Tambah Data Novel
+
+   ![image](https://github.com/Pengelolaan-Daftar-Novel-CI4/Pengelolaan-Daftar-Novel-CI4-Kelompok1/assets/113124849/299d5b98-a9cc-492c-82ef-71c88b56dcbe)
+
+   Berhasil disimpan
+
+   ![image](https://github.com/Pengelolaan-Daftar-Novel-CI4/Pengelolaan-Daftar-Novel-CI4-Kelompok1/assets/113124849/947b510e-53ec-472e-9978-d8ae08354dd1)
+
+
+9. Tampilan pada menu Genre
+
+    ![image](https://github.com/Pengelolaan-Daftar-Novel-CI4/Pengelolaan-Daftar-Novel-CI4-Kelompok1/assets/113124849/778baea6-fc52-4f1c-8fbb-9c50b7e79cbd)
+   
+
+11. Tampilan menu tambah Genre
+
+    ![image](https://github.com/Pengelolaan-Daftar-Novel-CI4/Pengelolaan-Daftar-Novel-CI4-Kelompok1/assets/113124849/a5106945-f6d9-40da-8a11-4b0c1a18162f)
+    
+
+12. Tampilan pada menu update genre
+
+    ![image](https://github.com/Pengelolaan-Daftar-Novel-CI4/Pengelolaan-Daftar-Novel-CI4-Kelompok1/assets/113124849/617dc05d-67fe-4a6a-bea9-3d3758c8e48d)
+
+
+13. Tampilan pada menu Contact
+
+    ![image](https://github.com/Pengelolaan-Daftar-Novel-CI4/Pengelolaan-Daftar-Novel-CI4-Kelompok1/assets/113124849/a1ece182-79b8-4a61-852f-14389b169807)
+
+14. Tampilan pada menu halaman About
+
+    ![image](https://github.com/Pengelolaan-Daftar-Novel-CI4/Pengelolaan-Daftar-Novel-CI4-Kelompok1/assets/113124849/c0b8ca20-1f9f-4e80-8288-bd118a70b1fa)
+
+
+## DAFTAR PUSTAKA
+
+Ahmad Muhardian. (2016, November 29). Cara Menggunakan Composer untuk Manajemen Proyek PHP. Retrieved Juli 7, 2023, from petanikode.com: https://www.petanikode.com/php-composer/
+
+
+Ahmad Muhardian. (2020, Agustus 20). Tutorial Codeigniter 4: Instalasi dan Persiapan Belajar Codeigniter 4. Retrieved Juli 7, 2023, from petanikode.com: https://www.2/codeigniter4-install/
+
+
+Irfan Lutfi. (2023, Juni -). Panduan coldeigneter 4. Retrieved Juli 7, 2023, from github.com: https://github.com/irfanltf/temankoding-ci4#g-update-dan-delete-pada-database
+
+
+MedanInCode. (2020, April 21). Aplikasi Login Sederhana Codeigniter 4. Retrieved Juli 7, 2023, from medanincode.com: https://medanincode.com/post/ci4/aplikasi-login-sederhana-codeigniter-4/
+
+
+Naning Nur Wijayanti. (2021, Oktober 1). Database: Berikut adalah Pengertian, Fungsi, dan Jenis-jenisnya. Retrieved Juli 7, 2023, from www.niagahoster.co.id: https://www.niagahoster.co.id/blog/database-adalah/
+
+
+
+
+
+     
+
+
+
+
+
+
+
+
    
 
   
