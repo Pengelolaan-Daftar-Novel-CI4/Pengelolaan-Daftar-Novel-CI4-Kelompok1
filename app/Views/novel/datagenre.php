@@ -1,19 +1,23 @@
 <?= $this->extend('layout/layout') ?>
 
 <?= $this->section('content') ?>
-<p>
-
-</p>
-<p>
-<h4>
-  Kategori
-</h4>
-</p> 
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+        <div class="card-header">
+            <div class="row">
+            <div class="text-center">
+                <h2> Halaman Kategori </h2>
+                </div>
+              
+            </div>
+    </div>
 <div class="row">
         <div class="col-md-12">
                     <div class="col-12 text-end">
-                        <a href="/genre/addgenre" class="btn btn-primary">Tambahkan Kategori</a>
+                        <a href="/genre/addgenre" class="btn btn-outline-primary">Tambahkan Data Genre</a>
                     </div>
+            <table class="table table-striped">
             <table class="table table-bordered table-striped">
                 <tr>
                     <th>No</th>
@@ -26,8 +30,8 @@
                         <td><?= $i++;?></td>
                         <td><?= $Genre['nama_genre']?></td>
                         <td>
-                        <a href="/genre/update/<?= $Genre["id_genre"]; ?>" class="btn btn-success">Update</a>
-                            <a class="btn btn-danger" onclick="return confirmDelete()">Delete</a>
+                        <a href="/genre/update/<?= $Genre["id_genre"]; ?>" class="btn btn-outline-success">Update</a>
+                            <a class="btn btn-outline-danger" onclick="return confirmDelete()">Delete</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>
