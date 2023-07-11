@@ -144,29 +144,19 @@ D.	Kekurangan Bootstrap
 
 Kekurangan Bootstrap adalah gaya visualnya yang hampir selalu sama, sehingga Anda perlu melakukan banyak penyesuaian gaya agar proyek Anda tidak monoton. Kalau tidak, semua website yang dibuat dengannya akan memiliki navigasi, struktur, dan komponen desain yang sama, yang tentu saja kurang menarik dan profesional. 
 
-## HASIL DAN PEMBAHASAN
-## Membuat Aplikasi Pengelolaan Daftar Novel Menggunakan Framework Codeineter 4
+## Tampilan Aplikasi
+1. Tampilan Login
+   ![image](https://github.com/Pengelolaan-Daftar-Novel-CI4/Pengelolaan-Daftar-Novel-CI4-Kelompok1/assets/113124849/d3274464-7710-42a8-b794-6518add943db)
 
-1. langkah awal dalam pembuatan aplikasi ini yaitu penginstallan composer dan ci4 ,yang bisa diiunduh di website resmi ci4
-   ![image](https://github.com/Pengelolaan-Daftar-Novel-CI4/Pengelolaan-Daftar-Novel-CI4-Kelompok1/assets/113124849/0b2395e6-ef8d-4840-95e4-19b315ce754c)
+2. Tampilan Home
+   
 
-   ![image](https://github.com/Pengelolaan-Daftar-Novel-CI4/Pengelolaan-Daftar-Novel-CI4-Kelompok1/assets/113124849/7e5a87b2-788b-4e92-a263-da069eda6357)
+  
 
-   Tampilan Yang Dihasilkan setelah mendownload composer dan CI4
-   ![image](https://github.com/Pengelolaan-Daftar-Novel-CI4/Pengelolaan-Daftar-Novel-CI4-Kelompok1/assets/113124849/9d3b1c26-7151-4c07-b1f7-b5347b66f659)
 
-2.  pembuatan aplikasi daftar novel dengan metode MVC , dengan awalan membuat sebuah program untuk data novel yang terdiri dari pembuatan controller , model dan view untuk tampilan
 
-   Controller / Novel.php
-   ![image](https://github.com/Pengelolaan-Daftar-Novel-CI4/Pengelolaan-Daftar-Novel-CI4-Kelompok1/assets/113124849/cbbbf65d-d626-48ac-bde0-be50f8ac9f8a)
-
-   Models/NovelModel
-   ![image](https://github.com/Pengelolaan-Daftar-Novel-CI4/Pengelolaan-Daftar-Novel-CI4-Kelompok1/assets/113124849/b2efc8d7-3d66-4d63-afac-daea08b21486)
-
-   View / novel / index.php
-   ![image](https://github.com/Pengelolaan-Daftar-Novel-CI4/Pengelolaan-Daftar-Novel-CI4-Kelompok1/assets/113124849/83fd9410-a4f9-43bb-a0c9-479e19d78b3f)
-
-3. kemudian membuat sebuah program untuk menampilakn sebuah data Kategori, karena kategori akan merelasikan ke Novel
+   
+   
    
 
 
