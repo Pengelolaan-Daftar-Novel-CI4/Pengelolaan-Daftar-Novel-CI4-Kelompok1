@@ -64,8 +64,8 @@ $this->section("content");
         <input type="file" class="form-control <?= isset($errors['sampul']) ? 'is-invalid' : ''; ?>" id="sampul" name="sampul" value="<?= old('sampul'); ?>">
         <small class="form-text text-muted">masukkan sampul novel.</small>
        
-        <a href="/novel/detail/" class="btn btn-danger">Kembali</a>
-        <button type="submit" class="btn btn-primary">Simpan</button>
+        <a href="/novel/detail/" class="btn btn-outline-dark">Kembali</a>
+        <button type="submit" class="btn btn-outline-primary">Simpan</button>
         </div>
       </form>
     </div>

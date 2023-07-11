@@ -10,10 +10,10 @@
                 <h2> Halaman Sinopsis Novel</h2>
                 </div>
                 <div class="col-md-6 text-end">
-                    <a href="/novel/index" class="btn btn-dark">Kembali</a>
+                    <a href="/novel/index" class="btn btn-outline-dark">Kembali</a>
                     </div>
             </div>
-    </div>
+    </div>
         <div class="card-body">
         <form action="/novel/detailNovel" method="POST" enctype="multipart/form-data">
                     <div class="row no-gutters">
