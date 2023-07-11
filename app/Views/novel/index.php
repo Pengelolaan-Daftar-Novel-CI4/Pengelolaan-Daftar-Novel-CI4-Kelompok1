@@ -1,9 +1,16 @@
 <?= $this->extend('layout/layout') ?>
 
 <?= $this->section('content') ?>
-<h1>
-    Data Novel
-</h1>
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-md-6">
+                <h2> Halaman Data Novel </h2>
+                </div>
+            </div>
+    </div>
 <div class="row">
     <?php foreach ($novel as $novel) : ?>
         <div class="col-md-2">

@@ -28,7 +28,7 @@
 <body>
 
 	<div class="limiter">
-	<form method="post"  action="<?= base_url('novel/index') ?>">
+	<form action="/login/login_action" method="POST" enctype="multipart/form-data">
 		<div class="container-login100" style="background-image: url('/assets/images/bg-01.jpg');">
 			<div class="wrap-login100">
 				<form class="login100-form validate-form">
