@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 10, 2023 at 04:40 PM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 8.1.12
+-- Waktu pembuatan: 11 Jul 2023 pada 09.53
+-- Versi server: 10.4.28-MariaDB
+-- Versi PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `genre`
+-- Struktur dari tabel `genre`
 --
 
 CREATE TABLE `genre` (
@@ -33,7 +33,7 @@ CREATE TABLE `genre` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `genre`
+-- Dumping data untuk tabel `genre`
 --
 
 INSERT INTO `genre` (`id_genre`, `nama_genre`) VALUES
@@ -47,7 +47,7 @@ INSERT INTO `genre` (`id_genre`, `nama_genre`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `novel`
+-- Struktur dari tabel `novel`
 --
 
 CREATE TABLE `novel` (
@@ -64,7 +64,7 @@ CREATE TABLE `novel` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `novel`
+-- Dumping data untuk tabel `novel`
 --
 
 INSERT INTO `novel` (`id`, `judul`, `slug`, `id_genre`, `karya`, `penerbit`, `sampul`, `sinopsis`, `created_at`, `update_at`) VALUES
@@ -73,47 +73,79 @@ INSERT INTO `novel` (`id`, `judul`, `slug`, `id_genre`, `karya`, `penerbit`, `sa
 (5, 'The Star and I', 'Star and I', 3, 'Ilana Tan', 'Gramedia Pustaka Utama', 'TSA.jpg', 'Novel The Star and I mengisahkan polemik kehidupan Olivia Mitchell, seorang aktris Broadway asal Skotlandia, yang berbakat dan terkenal di New York. Olivia merupakan anak yang diangkat oleh keluarga Mitchell dari sebuah panti asuhan yang berlokasi di New York.\r\n\r\nSejak kecil, Olivia Mitchell mencari informasi mengenai siapa orang tua kandungnya. Bukan karena ia tidak mencintai orang tua angkatnya, melainkan ingin menemukan jawaban atas alasan mengapa orang tua kandungnya menelantarkannya.\r\n\r\nSuatu ketika, ia mendapat kesempatan untuk bekerja di New York untuk mewujudkan cita-citanya sebagai aktris musikal Broadway. Ia tentunya bersemangat untuk pergi ke New York, karena ia dapat sekaligus menjalankan misi pencarian orang tua kandungnya.\r\n\r\nDalam perjalanan Olivia mencari orang tua kandungnya, Olivia bertemu dengan sahabat masa kecilnya yang juga merupakan cinta pertamanya yang gagal, Lawrence Rex Rankin.\r\n\r\nRex kemudian membantu sahabat masa kecilnya itu untuk menemukan orang tuanya. Pertemuan Olivia dan Rex membuka babak baru dalam kehidupan Olivia. Rex mempermudah jalan Olivia untuk menemukan orang tua kandungnya.\r\n\r\nPada akhirnya, Olivia pun menemukan sosok orang tua kandungnya. Walaupun pada akhirnya, kenyataan yang terjadi bertolak belakang dengan ekspektasi. Pada akhirnya pula, hubungan Rex dan Olive bertumbuh menjadi apa yang memang seharusnya terjadi sejak dulu.\r\n\r\n', '2023-06-13 13:09:49', '2023-06-13 13:09:49'),
 (6, 'Hujan', 'hujan', 4, 'Tere Liye', 'Gramedia Pustaka Utama', 'Hujan.jpg', 'Novel ini menceritakan tentang Esok dan Lail sebagai salah satu tokoh utama, keduanya dipertemukan setelah gunung meletus pada tahun 2042. Efek letusan gunung yang dahsyat membuat seisi bumi menyisihkan manusia dan tersisa sekitar 10% manusia.\r\n\r\nEsok yang memiliki nama panjang Soke Bahtera merupakan sosok anak muda yang pintar dan jenius, saat 16 tahun ia berpindah ke ibu kota untuk meneruskan sekolahnya dan ia berhasil membuat mobil terbang untuk pertama kalinya.\r\n\r\nSedangkan Lail sosok wanita sederhana yang tinggal di panti social sebagai relawan kemanusiaan dan mendapatkan pendidikan di sekolah perawat. Ia ternyata memiliki perasaan untuk Esok namun tidak dapat mengungkapkannya.\r\n\r\nCerita ini menggunakan latar di tahun 2041-20150 yang berarti menceritakan kecanggihan teknologi di masa depan, dan peran manusia akan tergantikan dengan teknologi dan ilmu pengetahuan. Manusia juga semakin dimanja dengan berbagai teknologi yang sudah ada, seperti tidak perlu repot memasak, menjahit, dan beberapa aktivitas lainnya.\r\n\r\nKonflik dari cerita ini saat Lail akan memodifikasi ingatannya di pusat terapi saraf dan ia ingin melupakan tentang hujan, kemudian Lail menceritakan tentang kehidupannya dari terjadinya bencana alam sampai tiba di pusat terapi syaraf.', '2023-06-13 13:09:49', '2023-06-13 13:09:49'),
 (7, 'Cantik Itu Luka', 'cantik', 5, 'Eka Kurniawan', 'Gramedia Pustaka Utama', 'CIL.jpg', 'Novel Cantik Itu Luka becerita tentang alur hidup Dewi Ayu, pelacur cantik di zaman kolonial. Garis hidup dan keturunan Dewi Ayu sangat unik, mulai dari silsilah ayah-ibu hingga anak-anaknya yang kelak banyak membawa pengaruh di Halimunda, wilayah rekaan Eka Kurniawan. Sejak kecil, Dewi Ayu tumbuh tanpa asuhan ayah dan ibu yang terusir karena kawin sedarah (perkawinan saudara tiri). Dewi Ayu diasuh oleh kakek-neneknya. Ia tumbuh menjadi gadis kuat dan pemberani. Salah satu bukti keberaniannya adalah ketegarannya hidup di penjara saat Jepang menyerang Hindia Belanda. Di tempat penahanan itulah, Dewi Ayu menyerahkan kesuciannya demi membantu rekannya di barak penampungan. Dua tahun kemudian, Dewi Ayu termasuk salah satu di antara 19 gadis tahanan yang dipindahkan ke rumah mewah yang dikelola Mama Kalong. Di tempat itulah, Dewi Ayu memulai hidupnya sebagai pelacur untuk melayani nafsu para tentara Jepang. Selama menjadi pelacur, Dewi Ayu melahirkan empat anak perempuan. Semuanya tidak jelas identitas ayahnya. Sebagaimana ibunya, tiga dari putri Dewi Ayu berparas sangat cantik. Dewi Ayu merasa bahwa mengasuh anak-anak yang sangat cantik amat merepotkan. Karena itulah, ketika hamil anak keempat, ia berharap bahwa anaknya menjadi anak buruk rupa dan demikianlah yang terjadi. Akan tetapi, Dewi Ayu tidak sempat menyaksikan putri bungsunya tersebut. Ironisnya, sebelum ia meninggal, Dewi Ayu memberi nama putri buruk rupanya itu dengan nama Si Cantik. Demikianlah kehidupan Si Cantik yang penuh luka. Nama yang ia emban sangat memberatkan hidupnya karena senyatanya ia berparas buruk rupa, tidak cantik rupawan sama sekali. Simak kisah kelanjutan Si Cantik dan petualangan hidup Dewi Ayu dalam novel Cantik Itu Luka (2002) karya Eka Kurniawan.', '2023-06-13 13:13:36', '2023-06-13 13:13:36'),
-(8, 'Dilan 1990', ' dilanmilea', 3, ' Pidi Baiq', 'Yayasan Mitra Netra', '1688996239_ccb3e3293ccd3fbd7727.jpg', '“Dilan : Dia Adalah Dilanku Tahun 1990” bercerita tentang kisah cinta dua remaja Bandung pada tahun 90an. Berawal dari seorang siswa bernama Dilan yang jatuh cinta dengan siswi pindahan dari SMA di Jakarta bernama Milea. Dilan memiliki beragam cara untuk mendekati dan mencuri perhatian Milea', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+(9, 'Dilan', ' dilan', 2, ' pidi baiq', '', '1689058602_206e24ec260bf27bc5ba.jpeg', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data untuk tabel `users`
+--
+
+INSERT INTO `users` (`id`, `username`, `password`, `created_at`) VALUES
+(1, 'admin', 'admin123', '2023-07-10 03:33:51');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `genre`
+-- Indeks untuk tabel `genre`
 --
 ALTER TABLE `genre`
   ADD PRIMARY KEY (`id_genre`);
 
 --
--- Indexes for table `novel`
+-- Indeks untuk tabel `novel`
 --
 ALTER TABLE `novel`
   ADD PRIMARY KEY (`id`),
   ADD KEY `id_genre` (`id_genre`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- Indeks untuk tabel `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `genre`
+-- AUTO_INCREMENT untuk tabel `genre`
 --
 ALTER TABLE `genre`
   MODIFY `id_genre` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `novel`
+-- AUTO_INCREMENT untuk tabel `novel`
 --
 ALTER TABLE `novel`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- Constraints for dumped tables
+-- AUTO_INCREMENT untuk tabel `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
 --
 
 --
--- Constraints for table `novel`
+-- Ketidakleluasaan untuk tabel `novel`
 --
 ALTER TABLE `novel`
   ADD CONSTRAINT `novel_ibfk_1` FOREIGN KEY (`id_genre`) REFERENCES `genre` (`id_genre`);
