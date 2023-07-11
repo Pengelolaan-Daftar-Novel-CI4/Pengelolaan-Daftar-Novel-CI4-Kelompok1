@@ -1,18 +1,16 @@
 <?php $this->extend("layout/layout");?>
 <?php $this->section("content"); ?>
-
 <div class="row">
     <div class="col-md-12">
         <div class="card">
         <div class="card-header">
             <div class="row">
-                <div class="col-md-6">
-                <h2> Halaman Detail Novel </h2>
+            <div class="text-center">
+                <h2> Halaman Detail Film </h2>
                 </div>
-                <div class="col-md-4 text-end">
-                    <a href="/novel/detail" class="btn btn-dark">Kembali</a>
-                    </div>
+              
             </div>
+    </div>
     </div>
         <div class="card-body">
         <form action="/novel/detailNovel" method="POST" enctype="multipart/form-data">
@@ -40,8 +38,9 @@
                             <h6 class="card-text"><?= $novel['penerbit']; ?></h6>
 
 
-                            <a href="/novel/update/<?= $novel["id"]; ?>" class="btn btn-success">Update</a>
-                            <a class="btn btn-danger" onclick="return confirmDelete()">Delete</a>
+                            <a href="/novel/detail" class="btn btn-outline-dark">Kembali</a>
+                            <a href="/novel/update/<?= $novel["id"]; ?>" class="btn btn-outline-success">Update</a>
+                            <a class="btn btn-outline-danger" onclick="return confirmDelete()">Delete</a>
                         </div>
                         </div>
                         </div>
