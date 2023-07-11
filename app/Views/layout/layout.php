@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APLIKASI Data Novel</title>
+    <title>Aplikasi Data Novel</title>
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <script src="/assets/js/unpkg.com_sweetalert@2.1.2_dist_sweetalert.min.js"></script> 
 </head>
@@ -33,7 +33,8 @@
                         <a href="/novel/about" class="nav-link px-0 align-middle ">
                             <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">About Us</span></a>
                     </li>
-                    <li>     
+                    <li>   
+                    <a href="/login" class="btn btn-outline-danger">Logout</a>  
                 </ul>
             </div>
         </div>

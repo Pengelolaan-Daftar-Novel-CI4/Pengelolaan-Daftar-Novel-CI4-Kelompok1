@@ -8,8 +8,8 @@
     <?php foreach ($novel as $novel) : ?>
         <div class="col-md-2">
             
-            <div class="card">
-                <img src="/assets/sampul/<?= $novel["sampul"] ?>" class="card-img-top">
+                <div class="card"><a href="/novel/sinopsis/<?= $novel["id"]; ?>">
+                    <img src="/assets/sampul/<?= $novel["sampul"] ?>" class="card-img-top"></a>
                 <div class="card-body">
                     <h5 class="card-title"><?= $novel["judul"] ?></h5>
                 </div>
