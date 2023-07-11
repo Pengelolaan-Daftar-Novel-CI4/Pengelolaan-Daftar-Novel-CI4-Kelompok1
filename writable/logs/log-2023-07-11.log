@@ -263,12 +263,18 @@ in APPPATH\Views\novel\detail.php on line 68.
  9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\Pengelolaan-Daftar-Novel-CI4-Kelompok1\\public\\index.php')
 INFO - 2023-07-11 10:18:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-07-11 10:18:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+<<<<<<< Updated upstream
 INFO - 2023-07-11 10:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-07-11 10:32:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-07-11 10:32:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-07-11 10:32:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-07-11 10:32:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 CRITICAL - 2023-07-11 10:32:46 --> Call to undefined function encryptUrl()
+=======
+INFO - 2023-07-11 10:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 10:33:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 10:33:39 --> Call to undefined function encryptUrl()
+>>>>>>> Stashed changes
 in APPPATH\Views\novel\datagenre.php on line 55.
  1 SYSTEMPATH\View\View.php(224): include()
  2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
@@ -278,9 +284,14 @@ in APPPATH\Views\novel\datagenre.php on line 55.
  6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
  7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+<<<<<<< Updated upstream
  9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Ade Semester 4\\Pengelolaan-Daftar-Novel-CI4-Kelompok1\\public\\index.php')
 INFO - 2023-07-11 10:33:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 CRITICAL - 2023-07-11 10:33:25 --> Call to undefined function encryptUrl()
+=======
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Dian\\Documents\\semester 4\\Pengelolaan-Daftar-Novel-CI4-Kelompok1\\public\\index.php')
+CRITICAL - 2023-07-11 10:40:30 --> Call to undefined function encryptUrl()
+>>>>>>> Stashed changes
 in APPPATH\Views\novel\datagenre.php on line 55.
  1 SYSTEMPATH\View\View.php(224): include()
  2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
@@ -290,6 +301,7 @@ in APPPATH\Views\novel\datagenre.php on line 55.
  6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Genre))
  7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+<<<<<<< Updated upstream
  9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Ade Semester 4\\Pengelolaan-Daftar-Novel-CI4-Kelompok1\\public\\index.php')
 CRITICAL - 2023-07-11 10:39:33 --> Call to undefined function encryptUrl()
 in APPPATH\Views\novel\datagenre.php on line 55.
@@ -333,3 +345,8 @@ INFO - 2023-07-11 10:42:56 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-07-11 10:43:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-07-11 10:44:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-07-11 10:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+=======
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Dian\\Documents\\semester 4\\Pengelolaan-Daftar-Novel-CI4-Kelompok1\\public\\index.php')
+INFO - 2023-07-11 10:40:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 10:40:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+>>>>>>> Stashed changes
