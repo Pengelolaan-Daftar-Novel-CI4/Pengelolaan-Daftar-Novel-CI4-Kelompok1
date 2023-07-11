@@ -73,6 +73,16 @@
                             <?php endif; ?>
                         </div>
 
+                        <div class="form-group">
+                            <label for="sinopsis">Sinopsis</label>
+                            <input type="text" class="form-control <?= isset($errors['sinopsis']) ? 'is-invalid ' : ''; ?>" id="sinopsis" name="sinopsis" value="<?= isset($errors['sinopsis']) ? old('sinopsis') : $Novel["sinopsis"];?>">
+                            <?php if (isset($errors['sinopsis'])) : ?>
+                                <div class=" invalid-feedback">
+                                    <?= $errors['sinopsis'] ?>
+                                </div>
+                            <?php endif; ?>
+                        </div>
+
                         <div class="col-md-6">
                             <label for="sampul" class="form-label">sampul</label>
                             <input type="file" class="form-control <?= isset($errors['sampul']) ? 'is-invalid' : ''; ?>" id="sampul" name="sampul" value="<?= old('sampul'); ?>">

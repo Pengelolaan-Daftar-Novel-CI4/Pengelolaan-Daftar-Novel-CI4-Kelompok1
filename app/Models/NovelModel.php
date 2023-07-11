@@ -13,7 +13,7 @@ class NovelModel extends Model
     //ketika insert menggunakan fungsi ci diakan melakukan autoincremen pada data yg kita tambahkan
     protected $useAutoIncrement = true;
     //mengisinkan apakah data dapat di update, delete dan insert pada kolom
-    protected $allowedFields      = ['judul', 'slug','id_genre', 'karya', 'sampul'];
+    protected $allowedFields      = ['judul', 'slug','id_genre', 'karya', 'penerbit', 'sinopsis', 'sampul'];
 
 
     public function getAllDataJoin(){

@@ -11,7 +11,7 @@ $this->section("content");
 </head>
 <body class="container bg-light">
   <div class="text-center">
-    <h2>tambahkan Data Novel</h2>
+    <h2>Tambahkan Data Novel</h2>
     <p>
       Berbagai Judul Novel Kekinian 
     </p>
@@ -57,6 +57,12 @@ $this->section("content");
           <label for="penerbit">Penerbit</label>
           <input type="text" class="form-control <?= isset($errors['penerbit']) ? 'is-invalid ' : ''; ?>" id="penerbit" name="penerbit" value=" <?= old('penerbit'); ?>">
           <small class="form-text text-muted">masukkan penerbit.</small>
+        </div>
+
+        <div class="form-group">
+          <label for="sinopsis">Sinopsis</label>
+          <input type="text" class="form-control <?= isset($errors['sinopsis']) ? 'is-invalid ' : ''; ?>" id="sinopsis" name="sinopsis" value=" <?= old('sinopsis'); ?>">
+          <small class="form-text text-muted">Mesukkan Sinopsis.</small>
         </div>
 
         <div class="form-group">
