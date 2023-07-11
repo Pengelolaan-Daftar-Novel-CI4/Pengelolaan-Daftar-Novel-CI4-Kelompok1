@@ -39,4 +39,13 @@ class Genre extends BaseController
         return view("novel/editgenre", $data);
     }
 
+    public function hapus($id_genre)
+{
+    $decryptedId = decryptUrl($id_genre);
+    $this->Genre->delete($decryptedId);
+    session()->setFlashdata('success', 'Data berhasil dihapus.');
+
+    return redirect()->to('/genre');
+}
+
 }
