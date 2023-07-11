@@ -31,7 +31,7 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 
 //tampilan awal saat di akses
-$routes->get('/', 'novel::index');
+$routes->get('/', 'Login::index');
 $routes->get('/about', 'about::index');
 $routes->get('/detail', 'Novel::detail');
 $routes->get('/contact', 'Novel::contact');

@@ -10,7 +10,7 @@
                 <h2> Halaman Data Novel </h2>
                 </div>
             </div>
-    </div>
+        </div>
 <div class="row">
     <?php foreach ($novel as $novel) : ?>
         <div class="col-md-2">
