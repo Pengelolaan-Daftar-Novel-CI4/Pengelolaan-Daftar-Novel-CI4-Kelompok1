@@ -1,51 +1,59 @@
-<?php $this ->extend("layout/layout");
-$this->section("content");
+<?= $this->extend('layout/layout') ?>
 
+<?= $this->section('content') ?>
+<p>
 
-?>
-
+</p>
+<p>
+<h4>
+  Kategori
+</h4>
+</p> 
 <div class="row">
-    <div class="col-md-12">
-        <div class="card">
-            <div class="card-header">
-                <div class="row">
-                    <div class="text-center">
-                        <h2>Tambahkan Kategori Novel</h2>
-                            <p>
-                                Kategori Novel Yang sedang Viral 
-                            </p>
+        <div class="col-md-12">
+                    <div class="col-12 text-end">
+                        <a href="/genre/addgenre" class="btn btn-primary">Tambahkan Kategori</a>
                     </div>
-                </div>
-            </div>
-            <div class="card-body">
-            <form action="/genre/baru" method="POST" enctype="multipart/form-data">
-                    <div class="row">
+            <table class="table table-bordered table-striped">
+                <tr>
+                    <th>No</th>
+                    <th>Kategori</th>
+                    <th>Action</th>
+                </tr>
+                <?php $i = 1 ;?>
+                <?php foreach($dataGenre as $Genre) :?>
+                    <tr>
+                        <td><?= $i++;?></td>
+                        <td><?= $Genre['nama_genre']?></td>
+                        <td>
+                        <a href="/genre/update/<?= $Genre["id_genre"]; ?>" class="btn btn-success">Update</a>
+                            <a class="btn btn-danger" onclick="return confirmDelete()">Delete</a>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
 
-                        <div class="col-md-6">
-                            <label for="nama_genre" class="form-label">Nama Genre</label>
-                            <input type="text" class="form-control <?= isset($errors['nama_genre']) ? 'is-invalid ' : ''; ?>" id="nama_genre" name="nama_genre" value="<?= old('nama_genre'); ?>">
-                            <?php if (isset($errors['nama_genrem'])) : ?>
-                                <div class="invalid-feedback">
-                                    <?= $errors['nama_genre'] ?>
-                                </div>
-                            <?php endif; ?>
-
-                        <div class="col-md-6">
-                            <a href="/genre" class="btn btn-dark mt-2" >kembali</a>
-                            <button type="submit" class="btn btn-primary mt-2">Simpan</button>
-                        </div>
-                    </div>
-                </form>
-
-
-            </div>
+            </table>
         </div>
     </div>
 
-</div>
+    <script>
+    function confirmDelete() {
+        swal({
+                title: "Apakah Anda yakin?",
+                text: "setelah dihapus! data anda akan benar-benar hilang!",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+            .then((willDelete) => {
+                if (willDelete) {
 
+                    window.location.href = "/genre/hapus/<?= encryptUrl($Genre['id_genre']) ?>";
 
-
-
-
-<?php $this->endSection();
+                } else {
+                    swal("Data tidak jadi dihapus!");
+                }
+            });
+    }
+</script>
+    <?= $this->endSection() ?>
