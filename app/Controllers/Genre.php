@@ -33,7 +33,7 @@ class Genre extends BaseController
 
     public function update($id_genre)
     {
-        $decryptedId = decryptUrl($id_genre);
+        $decryptedId = $id_genre;
         $data["errors"] = session('errors');
         $data["datagenre"] = $this-> Genre -> getDataByID ($id_genre);
         return view("novel/editgenre", $data);
