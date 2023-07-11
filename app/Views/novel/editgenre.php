@@ -11,7 +11,7 @@
                             <h2>Halaman Update Kategori</h2>
                         </div>
                         <div class="col-md-6 text-end">
-                            <a href="/genre" class="btn btn-dark"> Kembali</a>
+                            <a href="/genre" class="btn btn-aoutline-dark"> Kembali</a>
                         </div>
                     </div>
                 </div>
@@ -31,8 +31,8 @@
                                 <?php endif; ?>
                             </div>
                             <div class="col-md-6">
-                                <button type="submit" class="btn btn-primary mt-5">Simpan</button>
-                            </div>
+                                <button type="submit" class="btn btn-outline-primary mt-5">Simpan</button>
+                            </div>
                         </div>
                     </form>
                 </div>
