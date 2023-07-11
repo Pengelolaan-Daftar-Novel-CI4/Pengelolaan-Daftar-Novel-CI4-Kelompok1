@@ -50,7 +50,7 @@ class Novel extends BaseController
 
     public function hapus($id)
     {
-        $decryptedId = decryptUrl($id);
+        $decryptedId = $id;
         $this->Novel->delete($decryptedId);
         session()->setFlashdata('success', 'Data berhasil dihapus.');
 
