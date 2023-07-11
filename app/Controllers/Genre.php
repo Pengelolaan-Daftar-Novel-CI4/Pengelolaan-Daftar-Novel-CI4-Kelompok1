@@ -66,6 +66,29 @@ class Genre extends BaseController
         return redirect()->to("/genre");
     }
 
+    public function baru(){
+        $validation =$this->validate([
+            'nama_genre' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'kolom Nama genre Harus Diisi'
+                ]
+            ],
+    
+        ]);
+        if (!$validation) {
+            $errors = \Config\Services::validation()->getErrors();
+            return redirect()->back()->withInput()->with('errors', $errors);
+        }
+    
+        $data = [
+            'nama_genre'=> $this->request->getPost("nama_genre"),
+        ];
+        $this->Genre->save($data);
+        session()->setFlashdata('success', 'Data berhasil disimpan.');
+        return redirect()->to('/genre');
+    }
+
     public function hapus($id_genre)
 {
     $decryptedId = decryptUrl($id_genre);

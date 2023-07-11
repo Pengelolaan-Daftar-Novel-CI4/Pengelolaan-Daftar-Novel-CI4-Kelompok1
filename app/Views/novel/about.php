@@ -2,20 +2,16 @@
 
 <?= $this->section('content') ?>
 <div class="row">
-        <div class="col-md-12">
-            <table >
-                <tr>
-                    <th></th>
-                    <th>
-                        <h1>
-                            Tentang kami
-                        </h1>
-                    </th>
-                    <th></th>
-                </tr>
-                    <tr>
-                        <td></td>
-                        <td>
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+        <div class="card-header">
+            <div class="row">
+            <div class="text-center">
+                <h2> Halaman Tentang Novel </h2>
+                </div>
+            </div>
+    </div>
                             <p>
                             Selamat datang di Baca Novel, web terbaik untuk menikmati berbagai jenis Novel yang menarik.
                             </p>
@@ -26,13 +22,10 @@
                             Selain itu kami juga memberikan informasi terkini mengenai detail Novel. Kami juga memahami pentingnya keamanan dan kenyamanan saat menikmati konten digital. Oleh karena itu, kami menjaga privasi pengguna dengan cermat dan mengutamakan kebijakan hak cipta serta legalitas dalam menyediakan novel-novel yang kami tampilkan
                             </p>
                             <p>
-                        </td>
-                        <td>
-                        </td>
-                    </tr>
- 
 
-            </table>
         </div>
+        <div>
+            <a href="/novel/index" class="btn btn-outline-dark">Kembali</a>
+            </div>
     </div>
     <?= $this->endSection() ?>
