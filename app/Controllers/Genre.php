@@ -39,6 +39,33 @@ class Genre extends BaseController
         return view("novel/editgenre", $data);
     }
 
+    public function editgenre()
+    {
+        $validation = $this->validate([
+            'nama_genre' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Kolom Nama Genre harus diisi'
+                ]
+            ]
+        ]);
+
+        if (!$validation) {
+            $errors = \Config\Services::validation()->getErrors();
+            return redirect()->back()->withInput()->with('errors', $errors);
+        }
+
+        $id_genre = $this->request->getPost('id_genre');
+        $data = [
+            'nama_genre' => $this->request->getPost('nama_genre'),
+        ];
+
+        $this->Genre->update($id_genre, $data);
+
+        session()->setFlashdata('success', 'Data berhasil diupdate.');
+        return redirect()->to("/genre");
+    }
+
     public function hapus($id_genre)
 {
     $decryptedId = decryptUrl($id_genre);
