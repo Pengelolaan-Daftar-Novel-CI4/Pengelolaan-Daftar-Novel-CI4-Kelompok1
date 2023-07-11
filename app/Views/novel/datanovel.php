@@ -2,16 +2,23 @@
 
 <?= $this->section('content') ?>
 
-<h4>
-  Data Novel
-</h4>
-<div class="card-header">
-                <div class="row">
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-md-6">
+                <h2> Halaman Data Novel</h2>
+                </div>
+
+            </div>
+
+        <div class="card-body">
                     <div class="col-12 text-end">
-                        <a href="/novel/add" class="btn btn-primary">Tambahkan Data Novel</a>
+                        <a href="/novel/add" class="btn btn-outline-primary">Tambahkan Data Novel</a>
                     </div>
                 </div>
-            </div>
+        </div>
 
             <table class="table table-bordered table-striped">
            
@@ -34,7 +41,7 @@
                         <td><?= $novel['slug']?></td>
                         <td><?= $novel['nama_genre']?></td>
                         <td>
-                                <a href="/novel/detailNovel/<?= $novel["id"]; ?>" class="btn btn-warning">Detail</a>
+                        <a href="/novel/detailNovel/<?= $novel["id"]; ?>" class="btn btn-outline-warning">Detail</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>
