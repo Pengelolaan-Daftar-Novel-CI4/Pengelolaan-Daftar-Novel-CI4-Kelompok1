@@ -9,7 +9,8 @@ $this->section("content");?>
                     <div class="col-md-6">
                         <h3> Halaman Tambah Data Genre</h3>
                     </div>
-                    <div class="col-md-6 text-end"> 
+                    <div class="col-md-6 text-end">
+                        <a href="/genre" class="btn  btn-outline-dark" >kembali</a> 
                     </div>
                 </div>
             </div>
@@ -28,7 +29,6 @@ $this->section("content");?>
                             <?php endif; ?>
 
                         <div class="col-md-6">
-                            <a href="/genre" class="btn btn-dark mt-2" >kembali</a>
                             <button type="submit" class="btn  btn-outline-primary mt-5">Simpan</button>
                         </div>
                     </div>

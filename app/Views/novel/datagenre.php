@@ -52,7 +52,7 @@
             .then((willDelete) => {
                 if (willDelete) {
 
-                    window.location.href = "/genre/hapus/<?= encryptUrl($Genre['id_genre']) ?>";
+                    window.location.href = "/genre/hapus/<?= $Genre['id_genre'] ?>";
 
                 } else {
                     swal("Data tidak jadi dihapus!");
