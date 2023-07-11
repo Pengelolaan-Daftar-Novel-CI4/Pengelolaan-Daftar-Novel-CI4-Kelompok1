@@ -117,3 +117,147 @@ INFO - 2023-07-11 08:41:07 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-07-11 08:41:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-07-11 08:41:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-07-11 08:42:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 10:02:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-07-11 10:02:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\Novel::$genre is deprecated in APPPATH\Controllers\Novel.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Novel->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\Pengelolaan-Daftar-Novel-CI4-Kelompok1\\public\\index.php')
+INFO - 2023-07-11 10:02:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-07-11 10:02:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\Novel::$genre is deprecated in APPPATH\Controllers\Novel.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Novel->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\Pengelolaan-Daftar-Novel-CI4-Kelompok1\\public\\index.php')
+INFO - 2023-07-11 10:02:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-07-11 10:02:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Novel::$genre is deprecated in APPPATH\Controllers\Novel.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Novel->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\Pengelolaan-Daftar-Novel-CI4-Kelompok1\\public\\index.php')
+INFO - 2023-07-11 10:02:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-07-11 10:03:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\Novel::$genre is deprecated in APPPATH\Controllers\Novel.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Novel->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\Pengelolaan-Daftar-Novel-CI4-Kelompok1\\public\\index.php')
+INFO - 2023-07-11 10:03:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-07-11 10:03:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Novel::$genre is deprecated in APPPATH\Controllers\Novel.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Novel->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\Pengelolaan-Daftar-Novel-CI4-Kelompok1\\public\\index.php')
+CRITICAL - 2023-07-11 10:03:59 --> Call to undefined function encryptUrl()
+in APPPATH\Views\novel\detail.php on line 68.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('novel/detail', [], true)
+ 4 APPPATH\Controllers\Novel.php(41): view('novel/detail', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Novel->detailNovel('1')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Novel))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\Pengelolaan-Daftar-Novel-CI4-Kelompok1\\public\\index.php')
+WARNING - 2023-07-11 10:04:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\Novel::$genre is deprecated in APPPATH\Controllers\Novel.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Novel->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\Pengelolaan-Daftar-Novel-CI4-Kelompok1\\public\\index.php')
+INFO - 2023-07-11 10:04:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-07-11 10:04:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\Novel::$genre is deprecated in APPPATH\Controllers\Novel.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Novel->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\Pengelolaan-Daftar-Novel-CI4-Kelompok1\\public\\index.php')
+CRITICAL - 2023-07-11 10:04:20 --> Call to undefined function encryptUrl()
+in APPPATH\Views\novel\detail.php on line 68.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('novel/detail', [], true)
+ 4 APPPATH\Controllers\Novel.php(41): view('novel/detail', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Novel->detailNovel('2')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Novel))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\Pengelolaan-Daftar-Novel-CI4-Kelompok1\\public\\index.php')
+WARNING - 2023-07-11 10:04:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\Novel::$genre is deprecated in APPPATH\Controllers\Novel.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Novel->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\Pengelolaan-Daftar-Novel-CI4-Kelompok1\\public\\index.php')
+INFO - 2023-07-11 10:04:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 10:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-07-11 10:04:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Novel::$genre is deprecated in APPPATH\Controllers\Novel.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Novel->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\Pengelolaan-Daftar-Novel-CI4-Kelompok1\\public\\index.php')
+INFO - 2023-07-11 10:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-07-11 10:04:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Novel::$genre is deprecated in APPPATH\Controllers\Novel.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Novel->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\Pengelolaan-Daftar-Novel-CI4-Kelompok1\\public\\index.php')
+INFO - 2023-07-11 10:04:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-07-11 10:04:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Novel::$genre is deprecated in APPPATH\Controllers\Novel.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Novel->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\Pengelolaan-Daftar-Novel-CI4-Kelompok1\\public\\index.php')
+INFO - 2023-07-11 10:04:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-07-11 10:04:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Novel::$genre is deprecated in APPPATH\Controllers\Novel.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Novel->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\Pengelolaan-Daftar-Novel-CI4-Kelompok1\\public\\index.php')
+INFO - 2023-07-11 10:04:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-07-11 10:04:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Novel::$genre is deprecated in APPPATH\Controllers\Novel.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Novel->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\Pengelolaan-Daftar-Novel-CI4-Kelompok1\\public\\index.php')
+INFO - 2023-07-11 10:04:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-07-11 10:05:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Novel::$genre is deprecated in APPPATH\Controllers\Novel.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Novel->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\Pengelolaan-Daftar-Novel-CI4-Kelompok1\\public\\index.php')
+INFO - 2023-07-11 10:05:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-07-11 10:05:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Novel::$genre is deprecated in APPPATH\Controllers\Novel.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Novel->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\Pengelolaan-Daftar-Novel-CI4-Kelompok1\\public\\index.php')
+INFO - 2023-07-11 10:05:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-07-11 10:05:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Novel::$genre is deprecated in APPPATH\Controllers\Novel.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Novel->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\Pengelolaan-Daftar-Novel-CI4-Kelompok1\\public\\index.php')
+CRITICAL - 2023-07-11 10:05:08 --> Call to undefined function encryptUrl()
+in APPPATH\Views\novel\detail.php on line 68.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('novel/detail', [], true)
+ 4 APPPATH\Controllers\Novel.php(41): view('novel/detail', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Novel->detailNovel('1')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Novel))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\Pengelolaan-Daftar-Novel-CI4-Kelompok1\\public\\index.php')

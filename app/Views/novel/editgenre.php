@@ -32,7 +32,7 @@
                             </div>
                             <div class="col-md-6">
                                 <button type="submit" class="btn btn-outline-primary mt-5">Simpan</button>
-                            </div>
+                  </div>
                         </div>
                     </form>
                 </div>
