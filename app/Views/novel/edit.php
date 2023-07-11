@@ -9,8 +9,8 @@
                     <div class="col-6">
                          <h1>Edit Novel</h1>
                     </div>
-                    <div class="col-4 text-end">
-                    <a href="/novel/" class="btn btn-dark">Kembali</a>
+                    <div class="col-6 text-end">
+                    <a href="/novel/" class="btn btn-outline-dark">Kembali</a>
             </div> 
         </div>
     </div> 
@@ -64,7 +64,7 @@
                         </div>
 
                         <div class="col-md-6">
-                            <label for="penerbit" class="form-label">penerbit</label>
+                            <label for="penerbit" class="form-label">Penerbit</label>
                             <input type="text" class="form-control <?= isset($errors['penerbit']) ? 'is-invalid ' : ''; ?>" id="penerbit" name="penerbit" value="<?= isset($errors['penerbit']) ? old('penerbit') : $Novel["penerbit"];?>">
                             <?php if (isset($errors['penerbit'])) : ?>
                                 <div class=" invalid-feedback">
@@ -84,7 +84,7 @@
                         </div>
 
                         <div class="col-md-6">
-                            <label for="sampul" class="form-label">sampul</label>
+                            <label for="sampul" class="form-label">Sampul</label>
                             <input type="file" class="form-control <?= isset($errors['sampul']) ? 'is-invalid' : ''; ?>" id="sampul" name="sampul" value="<?= old('sampul'); ?>">
                             <?php if (isset($errors['sampul'])) : ?>
                                 <div class="invalid-feedback">
@@ -92,7 +92,7 @@
                                 </div>
                             <?php endif; ?>
                             <div class="col-md-6">
-                <label class="form-label">sampul Saat ini</label>
+                <label class="form-label">Sampul Saat ini</label>
             <div class="mb-6">
         <?php if ($Novel["sampul"]): ?>
             <img src="/assets/sampul/<?= $Novel["sampul"]; ?>" width="100" >
@@ -101,28 +101,13 @@
         <?php endif; ?>
         </div>
     </div>
+    
+    <button type="submit" class="btn btn-outline-primary mt-5">Simpan</button>
 </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <button type="submit" class="btn btn-primary mt-5">Simpan</button>
-                        </div>
-                    </div>
-                </form>
-
-
-            </div>
-        </div>
-    </div>
-
 </div>
-
-       
-                </div>
-            </div>
-        </form>
-        </div>
-        </div>
-        </div>
-        </div>
+</form>
+</div>
+</div>
+</div>
+</div>
 <?= $this->endSection()?>

@@ -184,12 +184,11 @@ class Novel extends BaseController
                 ]
             ],
 
-            'sampul' => [
-                'rules' => 'uploaded[cover]|mime_in[cover,image/jpg,image/jpeg,img/png]|max_size[cover,2048]',
+            'sampul'     => [
+                'rules' => 'mime_in[sampul,image/jpg,image/jpeg,image/png]|max_size[sampul,2048]',
                 'errors' => [
-                    'uploaded'=> 'kolom sampul harus Berisi File.',
-                    'mime_in' => 'Tipe file pada kolom cover harus berupa JPG,JPEG,atau PNG',
-                    'max_size' => 'ukuran file pada kolom cover melebihi batas maksimum'
+                    'mime_in' => 'Tipe file pada Kolom Sampul harus berupa JPG, JPEG, atau PNG',
+                    'max_size' => 'Ukuran file pada Kolom Sampul melebihi batas maksimum'
                 ]
             ],
 
@@ -200,7 +199,7 @@ class Novel extends BaseController
             return redirect()->back()->withInput()->with('errors', $errors);
         }
         //ambil data lama
-        $datanovel = $this->novel->find($this->request->getPost('id'));
+        $datanovel = $this->Novel->find($this->request->getPost('id'));
 
         //tambah request id
         $data = [
@@ -219,15 +218,15 @@ class Novel extends BaseController
             //generate nama file unik
             $imageName = $sampul->getRandomName();
             //pindahkan file ke direktori
-            $sampul->move(ROOTPATH . 'public/assets/cover/', $imageName);
+            $sampul->move(ROOTPATH . 'public/assets/sampul/', $imageName);
             //hapus file gambar lama jika ada
             if($datanovel['sampul']){
-                unlink(ROOTPATH . 'public/assets/cover/' . $novel['cover']);
+                unlink(ROOTPATH . 'public/assets/sampul/' . $novel['sampul']);
             }
             //jika ada tambahkan array cover di variable $data
             $data['sampul'] = $imageName;
         }
-        $this->novel->save($data);
+        $this->Novel->save($data);
         session()->setFlashdata('success', 'Data berhasil diperbarui.'); // tambahkan ini
         return redirect()->to('/novel');
     }
