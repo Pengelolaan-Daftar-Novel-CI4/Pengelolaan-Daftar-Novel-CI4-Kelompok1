@@ -6,7 +6,7 @@
         <div class="card-header">
             <div class="row">
             <div class="text-center">
-                <h2> Halaman Detail Film </h2>
+                <h2> Halaman Detail Novel </h2>
                 </div>
               
             </div>

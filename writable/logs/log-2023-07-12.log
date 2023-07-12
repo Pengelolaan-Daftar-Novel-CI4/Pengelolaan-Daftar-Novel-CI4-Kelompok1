@@ -1,0 +1,67 @@
+ERROR - 2023-07-12 00:26:39 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in C:\Users\Dian\Documents\semester 4\Pengelolaan-Daftar-Novel-CI4-Kelompok1\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\Users\Dian\Documents\semester 4\Pengelolaan-Daftar-Novel-CI4-Kelompok1\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'ci4', 3306, '', 0)
+#1 C:\Users\Dian\Documents\semester 4\Pengelolaan-Daftar-Novel-CI4-Kelompok1\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\Dian\Documents\semester 4\Pengelolaan-Daftar-Novel-CI4-Kelompok1\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\Dian\Documents\semester 4\Pengelolaan-Daftar-Novel-CI4-Kelompok1\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Dian\Documents\semester 4\Pengelolaan-Daftar-Novel-CI4-Kelompok1\app\Models\UserModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Dian\Documents\semester 4\Pengelolaan-Daftar-Novel-CI4-Kelompok1\app\Controllers\Login.php(24): App\Models\UserModel->login('admin', 'admin123')
+#6 C:\Users\Dian\Documents\semester 4\Pengelolaan-Daftar-Novel-CI4-Kelompok1\system\CodeIgniter.php(932): App\Controllers\Login->login_action()
+#7 C:\Users\Dian\Documents\semester 4\Pengelolaan-Daftar-Novel-CI4-Kelompok1\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\Users\Dian\Documents\semester 4\Pengelolaan-Daftar-Novel-CI4-Kelompok1\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Dian\Documents\semester 4\Pengelolaan-Daftar-Novel-CI4-Kelompok1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Dian\Documents\semester 4\Pengelolaan-Daftar-Novel-CI4-Kelompok1\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Dian\\D...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in C:\Users\Dian\Documents\semester 4\Pengelolaan-Daftar-Novel-CI4-Kelompok1\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\Dian\Documents\semester 4\Pengelolaan-Daftar-Novel-CI4-Kelompok1\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\Dian\Documents\semester 4\Pengelolaan-Daftar-Novel-CI4-Kelompok1\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\Dian\Documents\semester 4\Pengelolaan-Daftar-Novel-CI4-Kelompok1\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\Dian\Documents\semester 4\Pengelolaan-Daftar-Novel-CI4-Kelompok1\app\Models\UserModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\Dian\Documents\semester 4\Pengelolaan-Daftar-Novel-CI4-Kelompok1\app\Controllers\Login.php(24): App\Models\UserModel->login('admin', 'admin123')
+#5 C:\Users\Dian\Documents\semester 4\Pengelolaan-Daftar-Novel-CI4-Kelompok1\system\CodeIgniter.php(932): App\Controllers\Login->login_action()
+#6 C:\Users\Dian\Documents\semester 4\Pengelolaan-Daftar-Novel-CI4-Kelompok1\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 C:\Users\Dian\Documents\semester 4\Pengelolaan-Daftar-Novel-CI4-Kelompok1\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Dian\Documents\semester 4\Pengelolaan-Daftar-Novel-CI4-Kelompok1\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Dian\Documents\semester 4\Pengelolaan-Daftar-Novel-CI4-Kelompok1\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Dian\\D...')
+#10 {main}
+CRITICAL - 2023-07-12 00:26:39 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `password` = :password:', [...], false)
+ 3 APPPATH\Models\UserModel.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Login.php(24): App\Models\UserModel->login('admin', 'admin123')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Login->login_action()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Dian\\Documents\\semester 4\\Pengelolaan-Daftar-Novel-CI4-Kelompok1\\public\\index.php')
+INFO - 2023-07-12 00:27:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 00:27:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 00:28:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 00:28:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 00:28:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 00:28:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 00:28:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 00:28:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 00:28:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 00:28:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 00:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 00:28:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 00:29:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 00:29:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 00:29:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 00:29:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 00:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 00:29:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 00:29:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 00:29:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-12 00:29:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
